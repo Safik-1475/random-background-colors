@@ -7,9 +7,9 @@ const color = document.querySelector('.color');
 // Event listener handle on btn here
 btn.addEventListener('click', function () {
     const randomColor = getRandomColors();
-    console.log(randomColor);
-    document.body.style.backgroundColor = colors[randomColor];
     color.textContent = colors[randomColor];
+    document.body.style.backgroundColor = colors[randomColor];
+
 });
 
 // Get random function 
